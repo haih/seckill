@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ContentFilters</key>
+	<dict/>
+	<key>auto_connect</key>
+	<true/>
+	<key>data</key>
+	<dict>
+		<key>connection</key>
+		<dict>
+			<key>database</key>
+			<string>seckill</string>
+			<key>host</key>
+			<string>127.0.0.1</string>
+			<key>name</key>
+			<string>seckill</string>
+			<key>rdbms_type</key>
+			<string>mysql</string>
+			<key>sslCACertFileLocation</key>
+			<string></string>
+			<key>sslCACertFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslCertificateFileLocation</key>
+			<string></string>
+			<key>sslCertificateFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslKeyFileLocation</key>
+			<string></string>
+			<key>sslKeyFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>type</key>
+			<string>SPTCPIPConnection</string>
+			<key>useSSL</key>
+			<integer>0</integer>
+			<key>user</key>
+			<string>root</string>
+		</dict>
+		<key>session</key>
+		<dict>
+			<key>connectionEncoding</key>
+			<string>utf8</string>
+			<key>contentPageNumber</key>
+			<integer>1</integer>
+			<key>contentSelection</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJX
+			TlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAF
+			gAdUdHlwZVRyb3dzXxAdU2VsZWN0aW9uRGV0YWlsVHlwZU5TSW5k
+			ZXhTZXTSFwsYGVxOU1JhbmdlQ291bnQQAIAG0hscHR5aJGNsYXNz
+			bmFtZVgkY2xhc3Nlc1pOU0luZGV4U2V0oh8gWk5TSW5kZXhTZXRY
+			TlNPYmplY3TSGxwiI1xOU0RpY3Rpb25hcnmiIiBfEA9OU0tleWVk
+			QXJjaGl2ZXLRJidUZGF0YYABAAgAEQAaACMALQAyADcAQABGAE0A
+			VQBgAGcAagBsAG4AcQBzAHUAdwB8AIEAoQCmALMAtQC3ALwAxwDQ
+			ANsA3gDpAPIA9wEEAQcBGQEcASEAAAAAAAACAQAAAAAAAAAoAAAA
+			AAAAAAAAAAAAAAABIw==
+			</data>
+			<key>contentSortColIsAsc</key>
+			<true/>
+			<key>contentViewport</key>
+			<string>{{0, 0}, {694, 456}}</string>
+			<key>isToolbarVisible</key>
+			<true/>
+			<key>view</key>
+			<string>SP_VIEW_CUSTOMQUERY</string>
+			<key>windowVerticalDividerPosition</key>
+			<real>200</real>
+		</dict>
+	</dict>
+	<key>encrypted</key>
+	<false/>
+	<key>format</key>
+	<string>connection</string>
+	<key>queryFavorites</key>
+	<array/>
+	<key>queryHistory</key>
+	<array>
+		<string>select * from seckill</string>
+		<string>INSERT into 
+	seckill(name,number)
+values 
+	('1000 sec kill iphone6',100),
+	('1000 sec kill iphone5',200),
+	('1000 sec kill iphone4',300),
+	('1000 sec kill xiaomi4',500)</string>
+		<string>INSERT into 
+	seckill(name,number)
+values 
+	('1000 sec kill iphone6',100),
+	('1000 sec kill iphone5',200),
+	('1000 sec kill iphone4',300),
+	('1000 sec kill xiaomi4',500)；</string>
+		<string>CREATE TABLE seckill( 
+	seckill_id bigint NOT NULL AUTO_INCREMENT COMMENT 'production stock id',
+	name VARCHAR(120) NOT NULL COMMENT 'production name',
+	number int NOT NULL COMMENT 'stock number',
+	start_time timestamp NOT NULL COMMENT 'seckill start_time',
+	end_time timestamp not null default CURRENT_TIMESTAMP comment 'seckill end_time',
+	create_time timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'create time',
+	PRIMARY KEY (seckill_id),
+    key idx_start_time(start_time),
+	key idx_create_time(create_time)
+)ENGINE=InnoDB AUTO_INCREMENT=1000 DEFAULT CHARSET=utf8 COMMENT='seckill table'</string>
+		<string>CREATE TABLE seckill( 
+	seckill_id bigint NOT NULL AUTO_INCREMENT COMMENT 'production stock id',
+	name VARCHAR(120) NOT NULL COMMENT 'production name',
+	number int NOT NULL COMMENT 'stock number',
+	start_time timestamp NOT NULL COMMENT 'seckill start_time',
+	end_time timestamp not null comment 'seckill end_time',
+	create_time timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'create time',
+	PRIMARY KEY (seckill_id),
+    key idx_start_time(start_time),
+	key idx_create_time(create_time)
+)ENGINE=InnoDB AUTO_INCREMENT=1000 DEFAULT CHARSET=utf8 COMMENT='seckill table'</string>
+		<string>CREATE TABLE seckill( 
+	seckill_id bigint NOT NULL AUTO_INCREMENT COMMENT 'production stock id',
+	name VARCHAR(120) NOT NULL COMMENT 'production name',
+	number int NOT NULL COMMENT 'stock number',
+	start_time timestamp NOT NULL COMMENT 'seckill start_time',
+	-- end_time timestamp not null comment 'seckill end_time',
+	create_time timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'create time',
+	PRIMARY KEY (seckill_id),
+    key idx_start_time(start_time),
+	key idx_create_time(create_time)
+)ENGINE=InnoDB AUTO_INCREMENT=1000 DEFAULT CHARSET=utf8 COMMENT='seckill table'</string>
+	</array>
+	<key>rdbms_type</key>
+	<string>mysql</string>
+	<key>rdbms_version</key>
+	<string>5.7.9</string>
+	<key>version</key>
+	<integer>1</integer>
+</dict>
+</plist>
