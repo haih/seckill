@@ -3,6 +3,8 @@
  */
 package com.haih.dao;
 
+import org.apache.ibatis.annotations.Param;
+
 import com.haih.entity.SuccessKilled;
 
 /**
@@ -17,12 +19,12 @@ public interface SuccessKilledDao {
 	 * @param userPhone
 	 * @return 插入的行数
 	 */
-	int insertSuccessKilled(long seckillId,long userPhone);
+	int insertSuccessKilled(@Param("seckillId") long seckillId,@Param("userPhone")  long userPhone);
 
 	/**
 	 * 根据id查询SuccessKilled并携带秒杀产品对象实体
 	 * @param seckilled
 	 * @return
 	 */
-	SuccessKilled queryByIdWithSeckill(long seckilled);
+	SuccessKilled queryByIdWithSeckill(@Param("seckillId") long seckillId,@Param("userPhone")  long userPhone);
 }

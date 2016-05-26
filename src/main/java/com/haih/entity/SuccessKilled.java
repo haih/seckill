@@ -66,8 +66,10 @@ public class SuccessKilled {
 	public String toString() {
 		return "SuccessKilled [seckllId=" + seckllId + ", userPhone="
 				+ userPhone + ", state=" + state + ", createTime=" + createTime
-				+ "]";
+				+ ", seckill=" + seckill + ", getSeckllId()=" + getSeckllId()
+				+ ", getUserPhone()=" + getUserPhone() + ", getState()="
+				+ getState() + ", getCreateTime()=" + getCreateTime()
+				+ ", getSeckill()=" + getSeckill() + "]";
 	}
-	
-	
+
 }
