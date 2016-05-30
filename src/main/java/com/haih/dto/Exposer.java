@@ -40,9 +40,10 @@ public class Exposer {
 	 */
 	private long end;
 	
-	public Exposer(boolean exposed, long start, long now, long end) {
+	public Exposer(boolean exposed,long seckillId, long start, long now, long end) {
 		super();
 		this.exposed = exposed;
+		this.seckillId = seckillId;
 		this.start = start;
 		this.now = now;
 		this.end = end;

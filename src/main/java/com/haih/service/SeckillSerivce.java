@@ -10,6 +10,7 @@ import com.haih.dto.SeckillExecution;
 import com.haih.entity.Seckill;
 import com.haih.exception.RepeatKillExecption;
 import com.haih.exception.SeckillCloseException;
+import com.haih.exception.SeckillException;
 
 
 
@@ -49,6 +50,6 @@ public interface SeckillSerivce {
 	 * @param md5
 	 */
 	SeckillExecution executeSeckill(long seckillId,long userPhone,String md5)
-	 throws SecurityException, RepeatKillExecption,SeckillCloseException;
+	 throws SeckillException, RepeatKillExecption,SeckillCloseException;
 	
 }
