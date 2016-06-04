@@ -4,6 +4,7 @@
 package com.haih.dto;
 
 import com.haih.entity.SuccessKilled;
+import com.haih.enums.SeckillStateEnum;
 
 /**
  * @author haih
@@ -22,19 +23,19 @@ public class SeckillExecution {
 	//秒杀成功对象
 	private SuccessKilled successKilled;
 	
-	public SeckillExecution(long seckillId, int state, String stateInfo) {
+	public SeckillExecution(long seckillId,SeckillStateEnum stateEnum) {
 		super();
 		this.seckillId = seckillId;
-		this.state = state;
-		this.stateInfo = stateInfo;
+		this.state = stateEnum.getState();
+		this.stateInfo = stateEnum.getStateInfo();
 	}
 
-	public SeckillExecution(long seckillId, int state, String stateInfo,
+	public SeckillExecution(long seckillId, SeckillStateEnum stateEnum,
 			SuccessKilled successKilled) {
 		super();
 		this.seckillId = seckillId;
-		this.state = state;
-		this.stateInfo = stateInfo;
+		this.state = stateEnum.getState();
+		this.stateInfo = stateEnum.getStateInfo();
 		this.successKilled = successKilled;
 	}
 
