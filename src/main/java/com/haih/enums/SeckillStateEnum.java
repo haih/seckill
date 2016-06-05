@@ -5,11 +5,11 @@ package com.haih.enums;
 
 
 /**
- * @author E545
+ * @author haih
  * 使用枚举表述常量数据字段
  */
 public enum SeckillStateEnum {
-	SUCESS(1,"秒杀成功"),
+	SUCCESS(1,"秒杀成功"),
 	END(0,"秒杀结束"),
 	REPEAT_KILL(-1,"重复秒杀"),
 	INNER_ERROR(-2,"系统异常"),

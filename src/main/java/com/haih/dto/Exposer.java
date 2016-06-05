@@ -9,7 +9,7 @@ package com.haih.dto;
  *
  */
 public class Exposer {
-	
+
 	/**
 	 * 是否开启秒杀
 	 */
@@ -106,5 +106,12 @@ public class Exposer {
 
 	public void setEnd(long end) {
 		this.end = end;
+	}
+	
+	@Override
+	public String toString() {
+		return "Exposer [exposed=" + exposed + ", md5=" + md5 + ", seckillId="
+				+ seckillId + ", start=" + start + ", now=" + now + ", end="
+				+ end + "]";
 	}
 }
